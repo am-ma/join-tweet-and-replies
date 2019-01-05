@@ -1,21 +1,20 @@
-# TwitterHistory
+# TwitterHistory(join-tweet-and-replies)
+twitter公式からDLできる履歴（のうちtweets.jsをJSONに加工したもの）を加工するためのプログラムです。
+tweetとそれにぶら下がるリプライを一続きの文字列にし、てきとうなCSVファイルにして出力。
+主に自分用。
 
-**TODO: Add description**
+## 加工前後
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `twitter_history` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:twitter_history, "~> 0.1.0"}
-  ]
-end
+```
+ツイート
+-------
+@hogehoge #test1 #test2
+これはリプ
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/twitter_history](https://hexdocs.pm/twitter_history).
+↓
 
+```
+ツイート
+これはリプ
+```
